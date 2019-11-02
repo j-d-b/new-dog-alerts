@@ -47,11 +47,11 @@ node index
 This app was intendent to be deployed with `cron` and run every `CHECK_FREQUENCY_MINUTES`
 
 ```shell
-*/<CHECK_FREQUENCY_MINUTES> * * * * node <PATH_TO_INDEX>/index
+*/<CHECK_FREQUENCY_MINUTES> * * * * cd <PATH_TO_INDEX> && node index
 ```
 
 For example
 
 ```shell
-*/15 * * * * node ~/new-dog-alerts/index
+*/15 * * * * cd ~/new-dog-alerts && node index
 ```
