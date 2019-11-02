@@ -1,0 +1,15 @@
+<div style="text-align: center; font-family: sans-serif; background-color: rgb(167, 233, 255); height: 100%; padding: 1rem;">
+  <div style="background-color: #fff; border-radius: 5px; max-width: 400px; margin: 0 auto; padding: 1rem;">
+    <h1>New Dog Alert</h1>
+    <p>Found <strong>{{newDogs.length}}</strong> new dogs!</p>
+
+    {{#each newDogs}}
+    <div style="margin-bottom: 1rem;">
+      <a href="{{this.url}}">
+        <img style="max-width: calc(400px - 2rem);" src="{{this.imageURL}}" alt="{{this.name}}-photo" />
+      </a>
+      <a style="font-size: 1.5rem;" href="{{this.url}}">{{this.name}}</a>
+    </div>
+    {{/each}}
+  </div>
+</div>
