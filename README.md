@@ -31,10 +31,16 @@ ZIP_CODE | Location to search for dogs (in a 150mi radius)
 ## Usage
 Running `index.js` finds dogs that have been updated/added to Petfinder since `CHECK_FREQUENCY_MINUTES` ago and sends an email to `NEW_DOGS_RECIPIENTS` with these dogs. Dogs without photos are not included.
 
-Run this script once with
+Run this process once with
 
 ```shell
 npm run start
+```
+
+or 
+
+```shell
+node index
 ```
 
 ### With cron
@@ -47,5 +53,5 @@ This app was intendent to be deployed with `cron` and run every `CHECK_FREQUENCY
 For example
 
 ```shell
-*/15 * * * * node ~/index
+*/15 * * * * node ~/new-dog-alerts/index
 ```
