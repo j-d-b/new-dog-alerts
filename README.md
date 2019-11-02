@@ -5,7 +5,7 @@ This application uses the the [Petfinder API v2.0](https://www.petfinder.com/dev
 
 ## Installation
 
-```
+```shell
 git clone https://github.com/j-d-b/new-dog-alerts.git
 cd new-dog-alerts
 npm install
@@ -37,7 +37,7 @@ Run this process once with
 npm run start
 ```
 
-or 
+or
 
 ```shell
 node index
