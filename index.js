@@ -40,7 +40,7 @@ axios(GET_AUTH_TOKEN)
     const newDogs = data.animals
       .filter(dog => {
         const lastUpdate = Date.parse(dog.status_changed_at);
-        const isNewSinceLastCheck = lastUpdate >= Date.now() - checkFrequencyMilliseconds * 20;
+        const isNewSinceLastCheck = lastUpdate >= Date.now() - checkFrequencyMilliseconds;
         return dog.photos[0] && isNewSinceLastCheck;
       })
       .map(dog => ({
