@@ -31,6 +31,7 @@ axios(GET_AUTH_TOKEN)
         location: ZIP_CODE,
         sort: 'recent',
         age: 'baby',
+        size: 'medium,large,xlarge',
         limit: 15,
         distance: 150
       }
